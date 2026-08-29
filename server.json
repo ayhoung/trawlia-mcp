@@ -1,0 +1,38 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "co.trawlia/trawlia-mcp",
+  "title": "Trawlia",
+  "description": "Web search and page extraction for agents, returned as readable text rather than raw JSON.",
+  "version": "0.1.0",
+  "websiteUrl": "https://trawlia.co/mcp",
+  "repository": {
+    "url": "https://github.com/ayhoung/trawlia-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "trawlia-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TRAWLIA_API_KEY",
+          "description": "A Trawlia API key. Free at https://trawlia.co/signup, 100 credits a month, no card.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "TRAWLIA_BASE_URL",
+          "description": "Override the API origin. Defaults to https://api.trawlia.co; only needed to point at a local server.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
