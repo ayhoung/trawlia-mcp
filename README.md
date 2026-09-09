@@ -35,7 +35,7 @@ Ranked, deduplicated results from the live web.
 | `query` | required | Natural language, not keywords. |
 | `search_depth` | `basic` | `basic` is 1 credit and returns snippets. `advanced` is 2 and returns full page text. |
 | `topic` | `general` | `news` reaches news indexes and returns publication dates. |
-| `max_results` | 5 | Up to 20. These go into your context, so fewer is usually better. |
+| `max_results` | 20 | Up to 20. These go into your context, so ask for fewer when the task is narrow. |
 | `include_domains` / `exclude_domains` | - | Host filters. Subdomains are included. |
 | `time_range` | - | `day`, `week`, `month`, `year`. |
 

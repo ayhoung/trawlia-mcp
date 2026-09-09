@@ -77,8 +77,8 @@ const TOOLS = [
           type: "integer",
           minimum: 1,
           maximum: 20,
-          default: 5,
-          description: "Fewer is usually better; these results go into your context.",
+          default: 20,
+          description: "These results go into your context; ask for fewer when the task is narrow.",
         },
         include_domains: {
           type: "array",
