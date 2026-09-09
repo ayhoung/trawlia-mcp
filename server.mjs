@@ -230,7 +230,7 @@ function renderExtract(body) {
 }
 
 const server = new Server(
-  { name: "trawlia", version: "0.1.0" },
+  { name: "trawlia", version: "0.1.1" },
   { capabilities: { tools: {} } },
 );
 

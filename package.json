@@ -1,6 +1,6 @@
 {
   "name": "trawlia-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "mcpName": "co.trawlia/trawlia-mcp",
   "description": "MCP server for Trawlia: web search and extraction for AI agents.",
   "homepage": "https://trawlia.co",
