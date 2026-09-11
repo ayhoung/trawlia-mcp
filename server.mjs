@@ -92,6 +92,18 @@ const TOOLS = [
           description:
             "Window back from now. Drops results with no publication date, so it filters hard on topic 'general'.",
         },
+        language: {
+          type: "string",
+          description:
+            "ISO 639-1 code or name of the language the query is written in, e.g. 'es' for Spanish. " +
+            "Set it whenever the query is not in English: the sources default to an English locale and answer a Spanish query with English pages. " +
+            "Chinese, Japanese, Korean, Thai, Hebrew and Greek are read off the query's script when this is left out; languages written in Latin, Cyrillic or Arabic script are not.",
+        },
+        country: {
+          type: "string",
+          description:
+            "ISO 3166-1 alpha-2 code or name of the country whose news or web to prefer, e.g. 'MX'. A preference passed to the sources, not a filter.",
+        },
       },
       required: ["query"],
     },
