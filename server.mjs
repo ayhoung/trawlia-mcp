@@ -76,9 +76,8 @@ const TOOLS = [
         max_results: {
           type: "integer",
           minimum: 1,
-          maximum: 20,
-          default: 20,
-          description: "These results go into your context; ask for fewer when the task is narrow.",
+          description:
+            "Top N of the ranked list. Leave it out to receive every result found, typically 20 to 60. These go into your context, so set it when the task is narrow.",
         },
         include_domains: {
           type: "array",
