@@ -1,8 +1,8 @@
 # trawlia-mcp
 
-Trawlia as an MCP server: web search and page extraction, as two tools any MCP client can call.
+Trawlia as an MCP server: news search, web search and page extraction, as two tools any MCP client can call.
 
-Get a free key at [trawlia.co/signup](https://trawlia.co/signup) - 100 credits a month, no card.
+Get a free key at [trawlia.co/signup](https://trawlia.co/signup) - 1,000 credits a month, no card.
 
 ## Claude Code
 

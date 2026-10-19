@@ -48,11 +48,11 @@ const TOOLS = [
   {
     name: "trawlia_search",
     description:
-      "Search the live web and get back ranked, deduplicated results. " +
+      "Search news (the default) or the open web and get back ranked, deduplicated results. " +
       "Use search_depth 'basic' (1 credit, ~10x faster) for most questions: it returns titles, URLs and snippets, " +
       "which is enough to answer or to decide what to read. " +
       "Use 'advanced' (2 credits) only when you need the actual text of the pages, because it fetches and extracts every result. " +
-      "Set topic 'news' for anything time-sensitive; it is tuned for recent events and returns publication dates.",
+      "Topic defaults to 'news', which is tuned for recent events and returns publication dates; set topic 'general' for the open web.",
     inputSchema: {
       type: "object",
       properties: {
@@ -70,8 +70,8 @@ const TOOLS = [
         topic: {
           type: "string",
           enum: ["general", "news"],
-          default: "general",
-          description: "'news' for recent events; it returns publication dates that 'general' usually lacks.",
+          default: "news",
+          description: "'news' (the default) for recent events; it returns publication dates that 'general' usually lacks. Use 'general' for the open web.",
         },
         max_results: {
           type: "integer",
